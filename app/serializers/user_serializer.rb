@@ -3,5 +3,5 @@ class UserSerializer < ActiveModel::Serializer
 
   has_many :fan_pages
   has_many :creators, through: :fan_pages
-  has_many :lists
+  has_many :contracts
 end
