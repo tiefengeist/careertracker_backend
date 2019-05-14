@@ -1,7 +1,7 @@
 class ContractSerializer < ActiveModel::Serializer
   attributes :id, :user_id, :creator_id, :movie_id, :film_comment
 
-  belongs_to :user
-  belongs_to :movie
-  belongs_to :creator
+  has_one :user
+  has_one :movie
+  has_one :creator
 end
